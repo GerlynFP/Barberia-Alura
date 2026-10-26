@@ -1,92 +1,144 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="es">
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Barberia Alura</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="description" content="Barbería Alura: cortes de cabello y barba en el corazón de la ciudad desde 2020.">
+        <meta name="theme-color" content="#bbbbbb">
+        <title>Barbería Alura</title>
+        <link rel="icon" href="imagenes/imagenes/logo.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script>document.documentElement.classList.add("js")</script>
+        <script src="main.js" defer></script>
     </head>
 
-    <body>
-        <header>
+    <body class="pagina-inicio">
+        <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+        <header class="cabecera">
             <div class="caja">
-                <h1><img src="imagenes/imagenes/logo.png"></h1>
-                <nav>
+                <a class="marca" href="index.html" aria-label="Barbería Alura, inicio">
+                    <img src="imagenes/imagenes/logo.png" alt="" width="177" height="250">
+                </a>
+                <nav aria-label="Principal">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html" aria-current="page">Home</a></li>
                         <li><a href="productos.html">Productos</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        
-        <img class="banner" src="banner/banner.jpg">
 
-        <main>
-            <section class="principal">
-
-                <h2 class="titulo-principal">Sobre la Barberia</h2>
-
-                <img class="utensilios" src="imagenes/imagenes/utensilios[1].jpg" alt="Utensilios de un barbero">
-
-                <p>Ubicada en el corazón de la ciudad, <strong> Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba.
-                    Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
-            
-                <p id="mision"> <em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong> </em> </p>
-            
-                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda,
-                    para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad,
-                    garantizando calidad y satisfacción de nuestros clientes. </p>
-
-            </section>
-
-            <section class="mapa">
-                <h3 class="titulo-principal">Nuesta ubicación</h3>
-                <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
-
-                <div class="mapa-contenido">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30273.021384464493!2d-69.97934079999999
-                    !3d18.4778752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8a18c3d58be3%3A0x1455e0381fcfb97d!2s
-                    Instituto%20Tecnol%C3%B3gico%20de%20Santo%20Domingo!5e0!3m2!1ses!2sdo!4v1710816474226!5m2!1ses!2sdo" width
-                    ="100%" height="300" style="border:0;" allowfullscreen=""loading="lazy" referrerpolicy="no-referrer-when-
-                    downgrade"></iframe>
+        <section class="portada" aria-labelledby="titulo-portada">
+            <img class="portada-imagen" src="banner/banner.jpg" alt="Interior de la barbería con dos sillones clásicos" width="800" height="300">
+            <div class="portada-contenido caja">
+                <p class="sobretitulo entrada" style="--i:0">Desde 2020 · En el corazón de la ciudad</p>
+                <h1 id="titulo-portada" class="entrada" style="--i:1">Barbería <span>Alura</span></h1>
+                <p class="portada-texto entrada" style="--i:2">Lo mejor para tu cabello y tu barba, con profesionales que siguen de cerca las últimas tendencias.</p>
+                <div class="acciones entrada" style="--i:3">
+                    <a class="boton" href="contacto.html">Reservar cita</a>
+                    <a class="boton boton-claro" href="productos.html">Ver servicios</a>
                 </div>
-              
-            </section>
-        
-            <section class="diferenciales">
+            </div>
+        </section>
 
-                <h3 class="titulo-principal">Diferenciales</h3>
+        <main id="contenido">
+            <section class="principal caja" aria-labelledby="titulo-sobre">
+                <figure class="sobre-imagen revelar-imagen">
+                    <img class="utensilios" src="imagenes/imagenes/utensilios[1].jpg" alt="Brocha y navaja de afeitar sobre la mesa del barbero" width="674" height="674" loading="lazy">
+                </figure>
 
-                <div class="contenido-diferenciales">
-                    <ul class="listas-diferenciales">
-                        <li class="items">Atencion personalizada a los clientes</li>
-                        <li class="items">Espacio Diferenciales</li>
-                        <li class="items">Localizacion</li>
-                        <li class="items">Profesionales calificados</li>
-                        <li class="items">Puntualidad</li>
-                        <li class="items">Limpieza</li>
-                    </ul><img src="banner/cortar-pelo-despues-injerto-capilar.png" class="imagen-diferenciales" >
-                </div>
-                <div class="video">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY?si=l3Z9D7G8l0-wvfpD"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="sobre-texto">
+                    <p class="sobretitulo revelar">Nuestra historia</p>
+                    <h2 id="titulo-sobre" class="titulo-principal revelar">Sobre la Barbería</h2>
+
+                    <p class="revelar">Ubicada en el corazón de la ciudad, <strong>Barbería Alura</strong> trae al mercado lo mejor para tu cabello y barba.
+                        Fundada en 2020, la Barbería Alura ya es referente en la ciudad y conquista nuevos clientes cada día.</p>
+
+                    <blockquote id="mision" class="revelar">
+                        <span>Nuestra misión</span>
+                        <p>“Proporcionar autoestima y calidad de vida a nuestros clientes.”</p>
+                    </blockquote>
+
+                    <p class="revelar">Contamos con profesionales experimentados que observan constantemente los cambios y movimientos del mundo de la moda,
+                        para ofrecer a nuestros clientes las últimas tendencias. La atención tiene un estándar de excelencia y agilidad,
+                        garantizando calidad y satisfacción.</p>
+
+                    <dl class="datos revelar">
+                        <div><dt>Fundada</dt><dd>2020</dd></div>
+                        <div><dt>Servicios</dt><dd>3</dd></div>
+                        <div><dt>Horario</dt><dd>8h–20h</dd></div>
+                    </dl>
                 </div>
             </section>
 
+            <section class="mapa" aria-labelledby="titulo-mapa">
+                <div class="caja">
+                    <p class="sobretitulo revelar">Visítanos</p>
+                    <h2 id="titulo-mapa" class="titulo-principal revelar">Nuestra ubicación</h2>
+                    <p class="revelar">Nuestro establecimiento está ubicado en el corazón de la ciudad.</p>
+
+                    <div class="mapa-contenido revelar">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30273.021384464493!2d-69.97934079999999!3d18.4778752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8a18c3d58be3%3A0x1455e0381fcfb97d!2sInstituto%20Tecnol%C3%B3gico%20de%20Santo%20Domingo!5e0!3m2!1ses!2sdo!4v1710816474226!5m2!1ses!2sdo"
+                            title="Mapa con la ubicación de la barbería" allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="diferenciales" aria-labelledby="titulo-diferenciales">
+                <div class="caja">
+                    <p class="sobretitulo revelar">Por qué elegirnos</p>
+                    <h2 id="titulo-diferenciales" class="titulo-principal revelar">Diferenciales</h2>
+
+                    <div class="contenido-diferenciales">
+                        <ul class="listas-diferenciales">
+                            <li class="items revelar" style="--i:0">Atención personalizada a los clientes</li>
+                            <li class="items revelar" style="--i:1">Espacio diferenciado</li>
+                            <li class="items revelar" style="--i:2">Excelente ubicación</li>
+                            <li class="items revelar" style="--i:3">Profesionales calificados</li>
+                            <li class="items revelar" style="--i:4">Puntualidad</li>
+                            <li class="items revelar" style="--i:5">Limpieza</li>
+                        </ul>
+                        <figure class="imagen-diferenciales revelar-imagen">
+                            <img src="banner/cortar-pelo-despues-injerto-capilar.png" alt="Barbero perfilando un corte con peine y tijera" width="600" height="400" loading="lazy">
+                        </figure>
+                    </div>
+
+                    <div class="video revelar">
+                        <iframe src="https://www.youtube.com/embed/wcVVXUV0YUY?si=l3Z9D7G8l0-wvfpD"
+                            title="Video de la Barbería Alura" loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="llamado caja revelar" aria-labelledby="titulo-llamado">
+                <h2 id="titulo-llamado">¿Listo para tu próximo corte?</h2>
+                <p>Escríbenos y te atendemos en el horario que prefieras.</p>
+                <a class="boton" href="contacto.html">Reservar cita</a>
+            </section>
         </main>
 
-        <footer>
-            <img src="imagenes/imagenes/logo-blanco.png">
-            <p class="Copyrigth">&copy Copyrigth Barberia alura - 2024</p>
+        <footer class="pie">
+            <div class="caja pie-contenido">
+                <img src="imagenes/imagenes/logo-blanco.png" alt="Barbería Alura" width="177" height="250" loading="lazy">
+                <nav aria-label="Pie de página">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <p class="Copyrigth">&copy; Copyright Barbería Alura · 2024</p>
+            </div>
         </footer>
 
     </body>

@@ -1,59 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos-Barberia Alura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Servicios y precios de Barbería Alura: cabello, barba y paquete completo.">
+    <meta name="theme-color" content="#bbbbbb">
+    <title>Productos · Barbería Alura</title>
+    <link rel="icon" href="imagenes/imagenes/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add("js")</script>
+    <script src="main.js" defer></script>
 </head>
 <body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
 
-    <header>
+    <header class="cabecera">
         <div class="caja">
-            <h1><img src="imagenes/imagenes/logo.png"></h1>
+            <a class="marca" href="index.html" aria-label="Barbería Alura, inicio">
+                <img src="imagenes/imagenes/logo.png" alt="" width="177" height="250">
+            </a>
+            <nav aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html" aria-current="page">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <nav>
+    <main id="contenido">
+        <header class="encabezado-pagina caja">
+            <p class="sobretitulo entrada" style="--i:0">Servicios y precios</p>
+            <h1 class="titulo-principal entrada" style="--i:1">Nuestros productos</h1>
+            <p class="entrada" style="--i:2">Elige el servicio que necesitas y reserva tu cita en minutos.</p>
+        </header>
+
+        <ul class="productos caja">
+            <li class="revelar" style="--i:0">
+                <h2>Cabello</h2>
+                <img src="imagenes/imagenes/cabello.jpg" alt="" width="250" height="250">
+                <p class="producto-descripcion">Con tijera o máquina, a gusto del cliente</p>
+                <p class="producto-precio"><span>$</span>10.00</p>
+                <a class="boton boton-borde" href="contacto.html">Reservar</a>
+            </li>
+            <li class="revelar" style="--i:1">
+                <h2>Barba</h2>
+                <img src="imagenes/imagenes/barba.jpg" alt="" width="250" height="250">
+                <p class="producto-descripcion">Corte y diseño profesional de barba</p>
+                <p class="producto-precio"><span>$</span>08.00</p>
+                <a class="boton boton-borde" href="contacto.html">Reservar</a>
+            </li>
+            <li class="revelar destacado" style="--i:2">
+                <span class="etiqueta">Ahorra $3</span>
+                <h2>Cabello + Barba</h2>
+                <img src="imagenes/imagenes/cabello+barba.jpg" alt="" width="250" height="250">
+                <p class="producto-descripcion">Paquete completo de cabello y barba</p>
+                <p class="producto-precio"><span>$</span>15.00</p>
+                <a class="boton" href="contacto.html">Reservar</a>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="pie">
+        <div class="caja pie-contenido">
+            <img src="imagenes/imagenes/logo-blanco.png" alt="Barbería Alura" width="177" height="250" loading="lazy">
+            <nav aria-label="Pie de página">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+            <p class="Copyrigth">&copy; Copyright Barbería Alura · 2024</p>
         </div>
-
-    </header>
-
-    <main>
-        <ul class="productos">
-            <li>
-                <h2>Cabello</h2>
-                <img src="imagenes/imagenes/cabello.jpg">
-                <p class="producto-descripcion">Con tijera o maquina, a gusto del cliente</p>
-                <p class="producto-precio">$ 10.00</p>
-                
-            </li>
-            <li>
-                <h2>Barba</h2>
-                <img src="imagenes/imagenes/barba.jpg">
-                <p class="producto-descripcion">Corte y diseño profesional de barba</p>
-                <p class="producto-precio">$ 08.00</p>
-                
-            </li>
-            <li>
-                <h2>Cabello + Barba</h2>
-                <img src="imagenes/imagenes/cabello+barba.jpg">
-                <p class="producto-descripcion">paquete completo de cabello y barba</p>
-                <p class="producto-precio">$ 15.00</p>
-            </li>
-        </ul>
-    </main>
-
-    <footer>
-        <img src="imagenes/imagenes/logo-blanco.png">
-        <p class="Copyrigth">&copy Copyrigth Barberia alura - 2024</p>
     </footer>
-    
+
 </body>
 </html>
