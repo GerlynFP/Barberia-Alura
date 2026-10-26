@@ -73,3 +73,16 @@ if (formulario) {
     }, 3500);
   });
 }
+
+// Video: carga YouTube solo al hacer clic
+document.querySelectorAll(".video-portada").forEach((boton) => {
+  boton.addEventListener("click", () => {
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube-nocookie.com/embed/${boton.dataset.video}?autoplay=1&rel=0`;
+    iframe.title = "Video de la Barbería Alura";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    boton.replaceWith(iframe);
+    iframe.focus();
+  });
+});
