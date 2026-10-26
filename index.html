@@ -78,16 +78,68 @@
                 </div>
             </section>
 
+            <section class="servicios caja" aria-labelledby="titulo-servicios">
+                <div class="servicios-cabecera">
+                    <div>
+                        <p class="sobretitulo revelar">Servicios</p>
+                        <h2 id="titulo-servicios" class="titulo-principal revelar">Lo que hacemos mejor</h2>
+                    </div>
+                    <a class="enlace-flecha revelar" href="productos.html">Ver todos los servicios <span aria-hidden="true">→</span></a>
+                </div>
+                <ul class="servicios-lista">
+                    <li class="revelar" style="--i:0">
+                        <a href="productos.html">
+                            <img src="imagenes/imagenes/cabello.jpg" alt="" width="250" height="250" loading="lazy">
+                            <h3>Cabello</h3>
+                            <p>Con tijera o máquina</p>
+                            <strong>$10.00</strong>
+                        </a>
+                    </li>
+                    <li class="revelar" style="--i:1">
+                        <a href="productos.html">
+                            <img src="imagenes/imagenes/barba.jpg" alt="" width="250" height="250" loading="lazy">
+                            <h3>Barba</h3>
+                            <p>Corte y diseño profesional</p>
+                            <strong>$08.00</strong>
+                        </a>
+                    </li>
+                    <li class="revelar" style="--i:2">
+                        <a href="productos.html">
+                            <img src="imagenes/imagenes/cabello+barba.jpg" alt="" width="250" height="250" loading="lazy">
+                            <h3>Cabello + Barba</h3>
+                            <p>Paquete completo</p>
+                            <strong>$15.00</strong>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
             <section class="mapa" aria-labelledby="titulo-mapa">
                 <div class="caja">
                     <p class="sobretitulo revelar">Visítanos</p>
                     <h2 id="titulo-mapa" class="titulo-principal revelar">Nuestra ubicación</h2>
-                    <p class="revelar">Nuestro establecimiento está ubicado en el corazón de la ciudad.</p>
+                    <p class="mapa-intro revelar">Nuestro establecimiento está ubicado en el corazón de la ciudad.</p>
 
-                    <div class="mapa-contenido revelar">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30273.021384464493!2d-69.97934079999999!3d18.4778752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8a18c3d58be3%3A0x1455e0381fcfb97d!2sInstituto%20Tecnol%C3%B3gico%20de%20Santo%20Domingo!5e0!3m2!1ses!2sdo!4v1710816474226!5m2!1ses!2sdo"
-                            title="Mapa con la ubicación de la barbería" allowfullscreen loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="mapa-grid">
+                        <div class="mapa-info revelar">
+                            <h3>Barbería Alura</h3>
+                            <ul>
+                                <li><span>Dirección</span>En el corazón de Santo Domingo</li>
+                                <li><span>Días</span>Lunes, miércoles y viernes</li>
+                                <li><span>Horario</span>8h ~ 20h</li>
+                            </ul>
+                            <a class="boton" href="https://www.google.com/maps/search/?api=1&amp;query=Instituto+Tecnol%C3%B3gico+de+Santo+Domingo" target="_blank" rel="noopener">Cómo llegar</a>
+                        </div>
+
+                        <div class="mapa-contenido revelar" style="--i:1">
+                            <div class="mapa-respaldo" aria-hidden="true">
+                                <svg class="pin" viewBox="0 0 24 24" width="44" height="44"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" fill="currentColor"/></svg>
+                                <span>Barbería Alura · Santo Domingo</span>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30273.021384464493!2d-69.97934079999999!3d18.4778752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8a18c3d58be3%3A0x1455e0381fcfb97d!2sInstituto%20Tecnol%C3%B3gico%20de%20Santo%20Domingo!5e0!3m2!1ses!2sdo!4v1710816474226!5m2!1ses!2sdo"
+                                title="Mapa con la ubicación de la barbería" allowfullscreen loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -112,10 +164,13 @@
                     </div>
 
                     <div class="video revelar">
-                        <iframe src="https://www.youtube.com/embed/wcVVXUV0YUY?si=l3Z9D7G8l0-wvfpD"
-                            title="Video de la Barbería Alura" loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <button class="video-portada" type="button" data-video="wcVVXUV0YUY" aria-label="Reproducir el video de la Barbería Alura">
+                            <img src="banner/banner.jpg" alt="" width="800" height="300" loading="lazy">
+                            <span class="video-play" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+                            </span>
+                            <span class="video-texto">Conoce la barbería <small>Ver video</small></span>
+                        </button>
                     </div>
                 </div>
             </section>
