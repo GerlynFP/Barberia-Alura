@@ -598,6 +598,8 @@ nav a[aria-current="page"]::after{
 
 .imagen-diferenciales img{
   width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
   transition: transform 700ms var(--ease-out);
 }
 
